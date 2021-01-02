@@ -8,11 +8,13 @@ import PostForm from '../components/PostForm';
 import { FETCH_POSTS_QUERY } from '../util/graphql'
 
 function Home() {
-const { user } = useContext(AuthContext)
-    const {
-        loading,
-        data: { getPosts: post } = {}
-    } = useQuery(FETCH_POSTS_QUERY);
+    proxy.writeQuery({
+        query:FETCH_POSTS_QUERY,
+        data:{
+            getPosts:[result.data.createPost, ...data.getPosts],
+        },
+    });
+    values.body='';
 
     return (
         <Grid columns={3}>
