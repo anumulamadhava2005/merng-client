@@ -18,7 +18,7 @@ function PostCard({
                 <Image 
                     floated="right"
                     size="tiny"
-                    src="https://scontent.fhyd6-1.fna.fbcdn.net/v/t1.0-9/109314782_1144404872605453_145692745252314758_n.jpg?_nc_cat=104&ccb=2&_nc_sid=09cbfe&_nc_ohc=PsaCLlY-5P4AX-sXKaD&_nc_ht=scontent.fhyd6-1.fna&oh=cd1f0cfdeefc9feb6fe853921b5a6df4&oe=60127E27"
+                    src="https://lh3.googleusercontent.com/proxy/Jn_uluJUD7v0jISgL2H03o4YM942qLKAStnhiibJ4Cvq2aOhQ20rQ438rxdx2WmFJDx6Q92YKSppVAnA6DLhqSHIAj-x0z3SPybWAUsfbaZ5Qeffd4KYr5rt4L4c8yAOZhNpCZG6nRnJhZ0AoM0QfHiVnunmG0PR7A"
                 />
                 <Card.Header>{username}</Card.Header>
                 <Card.Meta as={Link} to={`/posts/${id}`}>{moment(createdAt).fromNow(true)}</Card.Meta>
