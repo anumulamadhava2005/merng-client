@@ -15,7 +15,7 @@ function SinglePost(props){
     
     const [comment, setComment] = useState('');
 
-    const { data: { getPost }} = useQuery(FETCH_POST_QUERY, {
+    const { data: { getPost } = {}} = useQuery(FETCH_POST_QUERY, {
         variables: {
             postId
         }
