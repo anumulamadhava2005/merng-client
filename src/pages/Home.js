@@ -11,7 +11,7 @@ function Home() {
 const { user } = useContext(AuthContext)
     const {
         loading,
-        data: { getPosts: post }
+        data: { getPosts: posts }
     } = useQuery(FETCH_POSTS_QUERY);
 
     return (
@@ -29,8 +29,8 @@ const { user } = useContext(AuthContext)
                     <h1>Loading posts..</h1>
                 ) : (
                     <Transition.Group>
-                            {post &&
-                                post.map((post) => (
+                            {posts &&
+                                posts.map((post) => (
                                     <Grid.Column key={post.id} style={{ marginBottom: 20 }}>
                                         <PostCard post={post} />
                                     </Grid.Column>
