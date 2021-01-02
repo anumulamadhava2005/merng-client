@@ -1,0 +1,15 @@
+.page-title{
+    display: block !important;
+    text-align: center;
+    font-size: 2rem;
+    margin-top: 10px;
+}
+
+.form-container{
+    width: 400px;
+    margin: auto;
+}
+
+.ui.blue.button:focus, .ui.blue.button .button:focus{
+    background-color: #01b6a0;
+}
