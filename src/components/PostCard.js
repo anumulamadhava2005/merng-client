@@ -8,7 +8,8 @@ import LikeButton from './LikeButton';
 import DeleteButton from './DeleteButton'
 
 function PostCard({
-    post: {username, id, commentCount, likeCount, createdAt, body}
+    post: {username, id, commentCount, likeCount, createdAt, body},
+    Subscription: {newPost}
 })  {
     const { user } = useContext(AuthContext);
 
@@ -35,6 +36,9 @@ function PostCard({
                         </Button>
                     }
                 />
+                {user && username === user.username && (
+                    newPost
+                )}
                 {user && username === user.username && (
                     <DeleteButton postId={id} />
                 )}
