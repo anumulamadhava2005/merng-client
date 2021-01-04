@@ -97,19 +97,6 @@ function SinglePost(props){
                                         >
                                             Post Comment
                                         </Button>
-                                        <LikeButton user={user} post={{ id, likeCount, likes }} />
-                                        <Button
-                                            as="div"
-                                            labelPosition="right"
-                                            onClick={() => console.log('Comment on post')}
-                                        >
-                                            <Button basic color="blue">
-                                                <Icon name="commenting" />
-                                            </Button>
-                                            <Label basic color="blue" pointing="left">
-                                                {commentCount}
-                                            </Label>
-                                        </Button>
                                     </div>
                                 </Form>
                             </Card.Content>
