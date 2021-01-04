@@ -37,9 +37,6 @@ function PostCard({
                     }
                 />
                 {user && username === user.username && (
-                    subscription.newPost
-                )}
-                {user && username === user.username && (
                     <DeleteButton postId={id} />
                 )}
             </Card.Content>
