@@ -7,6 +7,7 @@ import moment from 'moment'
 import { AuthContext } from '../context/auth';
 import LikeButton from '../components/LikeButton'
 import DeleteButton from '../components/DeleteButton';
+import { Link } from 'react-router-dom';
 
 function SinglePost(props){
     const postId = props.match.params.postId;
