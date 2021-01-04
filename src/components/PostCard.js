@@ -15,11 +15,6 @@ function PostCard({
     return (
         <Card fluid>
             <Card.Content>
-                <Image 
-                    floated="right"
-                    size="tiny"
-                    src="https://lh3.googleusercontent.com/proxy/Jn_uluJUD7v0jISgL2H03o4YM942qLKAStnhiibJ4Cvq2aOhQ20rQ438rxdx2WmFJDx6Q92YKSppVAnA6DLhqSHIAj-x0z3SPybWAUsfbaZ5Qeffd4KYr5rt4L4c8yAOZhNpCZG6nRnJhZ0AoM0QfHiVnunmG0PR7A"
-                />
                 <Card.Header>{username}</Card.Header>
                 <Card.Meta as={Link} to={`/posts/${id}`}>{moment(createdAt).fromNow(true)}</Card.Meta>
                 <Card.Description>{body}</Card.Description>
