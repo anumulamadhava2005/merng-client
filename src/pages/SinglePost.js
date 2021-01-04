@@ -95,7 +95,7 @@ function SinglePost(props){
                                             disabled={comment.trim() === ''}
                                             onClick={submitComment}
                                         >
-                                            Submit
+                                            Post Comment
                                         </Button>
                                         <LikeButton user={user} post={{ id, likeCount, likes }} />
                                         <Button
