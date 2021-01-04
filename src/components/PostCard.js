@@ -9,7 +9,6 @@ import DeleteButton from './DeleteButton'
 
 function PostCard({
     post: {username, id, commentCount, likeCount, createdAt, body},
-    Subscription: {newPost}
 })  {
     const { user } = useContext(AuthContext);
 
