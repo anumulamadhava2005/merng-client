@@ -46,7 +46,7 @@ function SinglePost(props){
 
         postMarkup = (
             <Grid.Row>
-                <Button as="div" as={Link} to={"/"} color="blue">
+                <Button as={Link} to={"/"} color="blue">
                     <Icon name="arrow left" />
                 </Button>
                 <Grid.Column width={2}>
