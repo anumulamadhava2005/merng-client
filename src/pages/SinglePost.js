@@ -45,6 +45,9 @@ function SinglePost(props){
 
         postMarkup = (
             <Grid.Row>
+                <Button as="div" as={Link} to={"/"} color="blue">
+                    <Icon name="arrow left" />
+                </Button>
                 <Grid.Column width={2}>
                     <Image
                         src="https://lh3.googleusercontent.com/proxy/Jn_uluJUD7v0jISgL2H03o4YM942qLKAStnhiibJ4Cvq2aOhQ20rQ438rxdx2WmFJDx6Q92YKSppVAnA6DLhqSHIAj-x0z3SPybWAUsfbaZ5Qeffd4KYr5rt4L4c8yAOZhNpCZG6nRnJhZ0AoM0QfHiVnunmG0PR7A"
