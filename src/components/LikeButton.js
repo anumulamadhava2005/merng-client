@@ -20,7 +20,7 @@ function LikeButton({post: { id, likeCount, likes }, user }) {
 
     const likeButton = user ? (
         liked ? (
-            <Button color='violet' basic  >
+            <Button color='pink' basic  >
                     <Icon name='heart' />
             </Button>
         ) : (
