@@ -38,6 +38,13 @@ function PostCard({
                 {user && username === user.username && (
                     <DeleteButton postId={id} />
                 )}
+                <div class="ui card">
+                   <div class="content">
+                     <div class="ui placeholder">
+                         <div class="ui image fluid">   src=""</div>
+                     </div>
+                   </div>
+                </div>
             </Card.Content>
         </Card>
     );
