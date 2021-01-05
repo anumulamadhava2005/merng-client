@@ -41,7 +41,7 @@ function LikeButton({post: { id, likeCount, likes }, user }) {
             trigger={
                 <Button as="div" labelPosition='left' onClick={likePost}>
                     {likeButton}
-                    <Label basic color='blue' pointing='left' style={{marginright: 20}}>
+                    <Label basic color='blue' pointing='left' style={{marginright: 60}}>
                         {likeCount}
                     </Label>
                 </Button>
