@@ -48,22 +48,22 @@ function PostForm(){
           img.src = URL.createObjectURL(this.files[0]); // set src to blob url
           img.onload = imageIsLoaded;
       }
-  });
-});
+     })
+   })
 
-function imageIsLoaded() { 
-  alert(this.src);  // blob url
-  // update width and height ...
-}
-<input type='file' />
-<br><img id="myImg" src="#" alt="your image" height=200 width=100>
-                </Form.Field>
-            </Form>
-            {error && (
-                <div className="ui error message" style={{marginBottom: 20 }}>
-                    <ul className="list">
-                        <li>{error.graphQLErrors[0].message}</li>
-                    </ul>
+ function imageIsLoaded() { 
+   alert(this.src);  // blob url
+   // update width and height ...
+ }
+ <input type='file' />
+ <br><img id="myImg" src="#" alt="your image" height=300 width=400>
+                 </Form.Field>
+             </Form>
+             {error && (
+                 <div className="ui error message" style={{marginBottom: 20 }}>
+                     <ul className="list">
+                         <li>{error.graphQLErrors[0].message}</li>
+                     </ul>
                 </div>
             )}
         </>
