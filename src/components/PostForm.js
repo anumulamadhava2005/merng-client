@@ -56,7 +56,7 @@ function PostForm(){
 
 function imageForm(){
     <style>
-    .thumb {height="75px" border="1px solid #000" margin="10px 5px 0 0";}
+    .thumb {height:{75px} border:"1px solid #000" margin:"10px 5px 0 0"}
     </style>
 
   <script type="text/javascript">
