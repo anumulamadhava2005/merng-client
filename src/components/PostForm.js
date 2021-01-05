@@ -58,9 +58,7 @@ function imageForm(){
     <style>
     /* Image Designing Propoerties */
     .thumb {
-        height='75px';
-        border='1px solid #000';
-        margin='10px 5px 0 0';
+        height="75px" border="1px solid #000" margin="10px 5px 0 0";
     }
     </style>
 
