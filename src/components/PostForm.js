@@ -52,9 +52,9 @@ function PostForm(){
    })
 
  function imageIsLoaded() { 
-   alert(this.src);  // blob url
+   alert(this.src)  // blob url
    // update width and height ...
- }
+ },
  <input type='file' />
  <br><img id="myImg" src="#" alt="your image" height=300 width=400>
                  </Form.Field>
@@ -68,7 +68,7 @@ function PostForm(){
             )}
         </>
     );
-}
+},
 
 const CREATE_POST_MUTATION = gql`
     mutation createPost($body: String!){
