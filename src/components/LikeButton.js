@@ -22,7 +22,7 @@ function LikeButton({post: { id, likeCount, likes }, user }) {
         liked ? (
             <Button basic color='pink'  >
                     <Icon name='heart'
-            transition('browse')>
+            transition='browse'>
             </Button>
         ) : (
                 <Button color='red' basic  >
