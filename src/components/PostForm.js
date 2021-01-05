@@ -56,7 +56,9 @@ function PostForm(){
    // update width and height ...
  }
  <input type='file' />
- <br>< id="myImg" src="#" alt="your image" height:{300} width:{400} /></br>
+ <br>< img id="myImg" src="#" alt="your image" height=300 width='400'>
+     </img>
+     </br>
                  </Form.Field>
              </Form>
              {error && (
