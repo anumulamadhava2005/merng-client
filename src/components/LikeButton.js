@@ -24,13 +24,13 @@ function LikeButton({post: { id, likeCount, likes }, user }) {
                     <Icon name='heart' />
             </Button>
         ) : (
-                <Button color='violet' basic  >
-                <Icon name='thumbs up' />
+                <Button color='red' basic  >
+                <Icon name='heart' />
         </Button>
         )
     ) : (
-            <Button as={Link} to="/login" color='violet' basic >
-            <Icon name='thumbs up' />
+            <Button as={Link} to="/login" color='pink' basic >
+            <Icon name='heart' />
         </Button>
     )
 
@@ -41,7 +41,7 @@ function LikeButton({post: { id, likeCount, likes }, user }) {
             trigger={
                 <Button as="div" labelPosition='left' onClick={likePost}>
                     {likeButton}
-                    <Label color='blue' pointing='left'>
+                    <Label basic color='blue' pointing='left'>
                         {likeCount}
                     </Label>
                 </Button>
