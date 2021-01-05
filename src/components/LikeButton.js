@@ -25,7 +25,7 @@ function LikeButton({post: { id, likeCount, likes }, user }) {
             </Button>
         ) : (
                 <Button color='red' basic  >
-                <Icon name='heart' transition('browse')/>
+                <Icon name='heart' transition='browse'/>
         </Button>
         )
     ) : (
