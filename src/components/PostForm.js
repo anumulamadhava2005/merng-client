@@ -86,7 +86,7 @@ function imageForm(){
   const Image(
   <input type='file' />
   </br><img id="myImg" src="#" alt="your image" height=200 width=100 /></br>)
-    
+}
 
 const CREATE_POST_MUTATION = gql`
     mutation createPost($body: String!){
