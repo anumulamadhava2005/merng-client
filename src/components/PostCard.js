@@ -42,7 +42,7 @@ function PostCard({
                 <div class="ui card">
                    <div class="content">
                      <div class="ui placeholder">
-                         <div class="ui image fluid">   src="imageForm.image"</div>
+                         <div class="ui image fluid">   src="imageForm.Image"</div>
                      </div>
                    </div>
                 </div>
