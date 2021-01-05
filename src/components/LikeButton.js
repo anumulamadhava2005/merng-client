@@ -22,14 +22,14 @@ function LikeButton({post: { id, likeCount, likes }, user }) {
         liked ? (
             <Button basic color='pink'  >
                     <Icon name='heart' 
-            $('.heart')
+            ('.heart')
      .transition('jiggle')
   ; />
             </Button>
         ) : (
                 <Button color='red' basic  >
                 <Icon name='heart'
-             $('.heart')
+             ('.heart')
     .transition('jiggle')/>
         </Button>
         )
