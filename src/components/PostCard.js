@@ -26,7 +26,7 @@ function PostCard({
                     inverted
                     trigger={
                         <Button labelPosition='left' as={Link} to={`/posts/${id}`}>
-                            <Button color='blue'>
+                            <Button color='sky blue'>
                                 <Icon name='commenting' />
                             </Button>
                             <Label basic color='pink' pointing='left'>
