@@ -21,11 +21,16 @@ function LikeButton({post: { id, likeCount, likes }, user }) {
     const likeButton = user ? (
         liked ? (
             <Button basic color='pink'  >
-                    <Icon name='heart' transition='browse' />
+                    <Icon name='heart' 
+            $('.heart')
+     .transition('jiggle')
+  ; />
             </Button>
         ) : (
                 <Button color='red' basic  >
-                <Icon name='heart' transition='browse'/>
+                <Icon name='heart'
+             $('.heart')
+    .transition('jiggle')/>
         </Button>
         )
     ) : (
