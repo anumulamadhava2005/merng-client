@@ -66,6 +66,10 @@ function imageForm(){
 
   <script type="text/javascript">
     /* The uploader form */
+      function imageIsLoaded(e) {
+        $('#myImg').attr('src', e.target.result);
+        $('#yourImage').attr('src', e.target.result);
+    };
     $(function () {
         $(":file").change(function () {
             if (this.files && this.files[0]) {
@@ -77,15 +81,11 @@ function imageForm(){
         });
     });
 
-    function imageIsLoaded(e) {
-        $('#myImg').attr('src', e.target.result);
-        $('#yourImage').attr('src', e.target.result);
-    };
-
   </script>
   
+  const Image(
   <input type='file' />
-  </br><img id="myImg" src="#" alt="your image" height=200 width=100 /></br>
+  </br><img id="myImg" src="#" alt="your image" height=200 width=100 /></br>)
     
 
 const CREATE_POST_MUTATION = gql`
@@ -105,3 +105,4 @@ const CREATE_POST_MUTATION = gql`
 `
 
 export default PostForm;
+export default imageForm;
