@@ -6,7 +6,7 @@ import moment from 'moment';
 import { AuthContext } from '../context/auth'
 import LikeButton from './LikeButton';
 import DeleteButton from './DeleteButton'
-import imageForm from './postForm'
+import imageForm from './PostForm'
 
 function PostCard({
     post: {username, id, commentCount, likeCount, createdAt, body},
