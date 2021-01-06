@@ -6,7 +6,6 @@ import moment from 'moment';
 import { AuthContext } from '../context/auth'
 import LikeButton from './LikeButton';
 import DeleteButton from './DeleteButton'
-import imageForm from './PostForm'
 
 function PostCard({
     post: {username, id, commentCount, likeCount, createdAt, body},
@@ -42,7 +41,7 @@ function PostCard({
                 <div class="ui card">
                    <div class="content">
                      <div class="ui placeholder">
-                         <div class="ui image fluid">   src="imageForm.Image"</div>
+                         <div class="ui image fluid">   src=""</div>
                      </div>
                    </div>
                 </div>
