@@ -54,35 +54,6 @@ function PostForm(){
     );
 }
 
-function imageForm(){
-    <style>
-    .thumb {height:"75px" border:"1px solid #000" margin:"10px 5px 0 0"}
-    </style>
-
-  <script type="text/javascript">
-    /* The uploader form */
-      function imageIsLoaded(e) {
-        $('#myImg').attr('src', e.target.result);
-        $('#yourImage').attr('src', e.target.result);
-    };
-    $(function () {
-        $(":file").change(function () {
-            if (this.files && this.files[0]) {
-                var reader = new FileReader();
-
-                reader.onload = imageIsLoaded;
-                reader.readAsDataURL(this.files[0]);
-            }
-        });
-    });
-
-  </script>
-  
-  const Image(
-  <input type='file' />
-  </br><img id="myImg" src="#" alt="your image" height=200 width=100 /></br>)
-}
-
 const CREATE_POST_MUTATION = gql`
     mutation createPost($body: String!){
         createPost(body: $body){
