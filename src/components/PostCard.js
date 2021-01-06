@@ -41,7 +41,7 @@ function PostCard({
                 <div class="ui card">
                    <div class="content">
                      <div class="ui placeholder">
-                         <div class="ui image fluid">   src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrn0JqZLe3ZLEqfbxwZQBDyciSme5JxM6rjw&usqp=CAU"</div>
+                         <div class="ui image fluid" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQrn0JqZLe3ZLEqfbxwZQBDyciSme5JxM6rjw&usqp=CAU"/>
                      </div>
                    </div>
                 </div>
