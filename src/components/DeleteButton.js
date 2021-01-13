@@ -39,7 +39,7 @@ function DeleteButton({ postId, commentId,callback }){
             floated="right"
             onClick={() => setConfirmOpen(true)}
         >
-            <Icon name="bin" style={{ margin: 0 }} />
+            <Icon name="trash bin" style={{ margin: 0 }} />
         </Button>
         }
         />
