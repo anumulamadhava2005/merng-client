@@ -54,7 +54,6 @@ function MenuBar () {
                     />
                 </Menu.Menu>
             </Menu>
-        </Menu.Menu>
     )
 
     return menuBar  ;
