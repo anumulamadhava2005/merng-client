@@ -28,8 +28,8 @@ function MenuBar () {
                     </Menu.Menu>
                 </Menu>
     ) : (
-            <Menu.Menu position='left'>
             <Menu pointing secondary size="massive" color="blue" >
+                <Menu.Menu position='left'>
                 <Menu.Item
                     name='home'
                     active={activeItem === 'home'}
