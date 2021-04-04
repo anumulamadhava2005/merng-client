@@ -26,6 +26,7 @@ const { user } = useContext(AuthContext)
                     </Grid.Column>
                 )}
                 {loading ? (
+                    {loading}
                     <h1>Loading posts..</h1>
                 ) : (
                     <Transition.Group>
