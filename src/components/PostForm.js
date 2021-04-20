@@ -15,8 +15,7 @@ function PostForm(){
         variables: values,
         update(proxy, result){
             const data = proxy.readQuery({
-                query: FETCH_POSTS_QUERY
-                pollInterval: 500,
+                query: FETCH_POSTS_QUERY 
             });
             data.getPosts = [result.data.createPost, ...data.getPosts];
             proxy.writeQuery({ query: FETCH_POSTS_QUERY, data});
