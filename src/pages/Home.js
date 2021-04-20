@@ -10,7 +10,7 @@ import { FETCH_POSTS_QUERY } from '../util/graphql'
 function Home() {
 const { user } = useContext(AuthContext)
     const {
-        loading
+        {loading}
         data: { getPosts: post } = {}
     } = useQuery(FETCH_POSTS_QUERY);
 
